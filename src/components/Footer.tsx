@@ -7,13 +7,21 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">Unlimited Auto</h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">U</span>
+              </div>
+              <div>
+                <div className="text-xl font-bold">UNLIMITED</div>
+                <div className="text-lg font-semibold text-blue-400">AUTO</div>
+              </div>
+            </div>
             <p className="text-gray-300 mb-6 max-w-md">
               Your trusted local car dealer. We specialize in quality used vehicles with transparent pricing and exceptional customer service.
             </p>
-            <div className="text-gray-300">
-              <p className="mb-2">📍 123 Main Street, Your City, ST 12345</p>
-              <p className="mb-2">📞 (123) 456-7890</p>
+            <div className="text-gray-300 space-y-2">
+              <p>📍 123 Main Street, Your City, ST 12345</p>
+              <p>📞 (123) 456-7890</p>
               <p>📧 info@unlimitedauto.com</p>
             </div>
           </div>
@@ -28,13 +36,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/sell-trade" className="text-gray-300 hover:text-white transition-colors">
-                  Sell Your Car
+                <Link href="/financing" className="text-gray-300 hover:text-white transition-colors">
+                  Financing
                 </Link>
               </li>
               <li>
-                <Link href="/financing" className="text-gray-300 hover:text-white transition-colors">
-                  Financing
+                <Link href="/services" className="text-gray-300 hover:text-white transition-colors">
+                  Our Services
                 </Link>
               </li>
               <li>
@@ -42,20 +50,48 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
+              <li>
+                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
+                  Contact
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Hours */}
+          {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Business Hours</h4>
-            <div className="text-gray-300 space-y-1">
-              <p>Monday - Friday: 9:00 AM - 7:00 PM</p>
-              <p>Saturday: 9:00 AM - 6:00 PM</p>
-              <p>Sunday: 12:00 PM - 5:00 PM</p>
-            </div>
+            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/services/repair" className="text-gray-300 hover:text-white transition-colors">
+                  Auto Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/collision" className="text-gray-300 hover:text-white transition-colors">
+                  Collision Repair
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/detailing" className="text-gray-300 hover:text-white transition-colors">
+                  Detailing
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/tinting" className="text-gray-300 hover:text-white transition-colors">
+                  Window Tinting
+                </Link>
+              </li>
+              <li>
+                <Link href="/services/wrapping" className="text-gray-300 hover:text-white transition-colors">
+                  Vehicle Wrapping
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
 
+        {/* Bottom Bar */}
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">

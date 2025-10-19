@@ -1,8 +1,10 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
-import WhyBuyHere from '@/components/WhyBuyHere'
+import Services from '@/components/Services'
 import FeaturedVehicles from '@/components/FeaturedVehicles'
-import ContactSection from '@/components/ContactSection'
+import Financing from '@/components/Financing'
+import Testimonials from '@/components/Testimonials'
+import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
 export default function Home() {
@@ -10,9 +12,11 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <WhyBuyHere />
+      <Services />
       <FeaturedVehicles />
-      <ContactSection />
+      <Financing />
+      <Testimonials />
+      <Contact />
       <Footer />
     </main>
   )
